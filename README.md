@@ -1,8 +1,34 @@
+# React Native & TypeScript - NASA App
+
+---
+
+# Temas puntuales de la sección
+
+### ¿Qué veremos en esta sección?
+
+En esta sección usaremos el API de la NASA para crear un proyecto el cual tendrá una vista de Home donde habrán algunos post y un post del día como primer elemento y otra vista donde estarán los detalles de cada post de la NASA con su respectiva información.
+
+### \* RECURSOS A USAR:
+
+- NASA API: https://api.nasa.gov/
+- react-native-dotenv: https://www.npmjs.com/package/react-native-dotenv
+  - `npm i react-native-dotenv`
+- date-fns: https://date-fns.org/docs/Getting-Started
+  - `npm install date-fns --save`
+
+### \* IMÁGENES DE LA APLICACIÓN:
+
+<div>
+  <img src="" alt="image" width="200">
+</div>
+
+---
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+> **Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
 ## Step 1: Start the Metro Server
 
