@@ -19,7 +19,13 @@ En esta sección usaremos el API de la NASA para crear un proyecto el cual tendr
 ### \* IMÁGENES DE LA APLICACIÓN:
 
 <div>
-  <img src="" alt="image" width="200">
+  <img src="./screenshotsApp/Screenshot_1702522384.png" alt="image" width="200">
+  <img src="./screenshotsApp/Screenshot_1702522386.png" alt="image" width="200">
+  <img src="./screenshotsApp/Screenshot_1702522389.png" alt="image" width="200">
+  <img src="./screenshotsApp/Screenshot_1702522395.png" alt="image" width="200">
+  <img src="./screenshotsApp/Screenshot_1702522399.png" alt="image" width="200">
+  <img src="./screenshotsApp/Screenshot_1702522402.png" alt="image" width="200">
+  <img src="./screenshotsApp/Screenshot_1702522408.png" alt="image" width="200">
 </div>
 
 ---
