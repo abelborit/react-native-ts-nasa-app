@@ -1,6 +1,9 @@
 import React from 'react';
 import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {PostImageNASA} from '../../interfaces/appInterfaces';
+import {useNavigation} from '@react-navigation/native';
+import {StackNavigationProp} from '@react-navigation/stack';
+import {RootStackParams} from '../../navigators/StackNavigator';
 
 interface CardImageProps {
   postElement: PostImageNASA;
@@ -13,6 +16,8 @@ export const CardImage = ({
   backgroundColor,
   principalPost,
 }: CardImageProps) => {
+  const navigator = useNavigation<StackNavigationProp<RootStackParams>>(); // forma un poco más directa usando el RootStackParams desde StackNavigator.tsx
+
   return (
     <View style={{...styles.cardContainer, backgroundColor}}>
       <View style={styles.imageContainer}>
@@ -34,7 +39,7 @@ export const CardImage = ({
           <Text style={styles.explanation}>
             {postElement?.explanation
               .split(' ')
-              .slice(0, 45)
+              .slice(0, 30)
               .join(' ')
               .concat(
                 postElement.explanation.split(' ').length > 100 ? '...' : '',
@@ -44,7 +49,10 @@ export const CardImage = ({
       </View>
 
       <View style={styles.btnContainer}>
-        <TouchableOpacity style={styles.btnStyle} activeOpacity={0.8}>
+        <TouchableOpacity
+          style={styles.btnStyle}
+          activeOpacity={0.8}
+          onPress={() => navigator.navigate('DetailsScreen', {postElement})}>
           <Text style={styles.btnText}>View More</Text>
         </TouchableOpacity>
       </View>

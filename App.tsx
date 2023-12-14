@@ -4,24 +4,17 @@
  *
  * @format
  */
-
+import 'react-native-gesture-handler';
 import React from 'react';
-import {SafeAreaView, StyleSheet} from 'react-native';
-import {HomeScreen} from './src/screens/HomeScreen';
+import {NavigationContainer} from '@react-navigation/native';
+import {StackNavigator} from './src/navigators/StackNavigator';
 
 function App(): React.JSX.Element {
   return (
-    <SafeAreaView style={styles.container}>
-      <HomeScreen />
-    </SafeAreaView>
+    <NavigationContainer>
+      <StackNavigator />
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#1b4168',
-  },
-});
 
 export default App;
